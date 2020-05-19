@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 @model List<PersonOfTheYear.Models.TimePerson>
 
 
@@ -20,13 +17,50 @@ using System.Threading.Tasks;
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About This App</a></li>
                 <li><a href="#">About The Developer</a></li>
-                <li><a href="#">Results</a></li>
+                <li><a href="..">Search Again</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-    </main>
+<main>
+    <h1>Your Search Results</h1>
+    
+    <div>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Honor</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>BirthYear</th>
+                <th>DeathYear</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Context</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Year</td>
+                    <td>@item.Honor</td>
+                    <td>@item.Name</td>
+                    <td>@item.Country</td>
+                    <td>@item.BirthYear</td>
+                    <td>@item.DeathYear</td>
+                    <td>@item.Title</td>
+                    <td>@item.Category</td>
+                    <td>@item.Context</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    
+    
+    
+    
+
+</main>
 
 
 
