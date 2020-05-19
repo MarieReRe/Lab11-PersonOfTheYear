@@ -55,8 +55,8 @@ namespace PersonOfTheYear.Models
                   columns[1],
                     columns[2],
                     columns[3],
-                    (columns[4] == "") ? 0 : Convert.ToInt32(columns[4]),
-                   (columns[5] == "") ? 0 : Convert.ToInt32(columns[5]),
+                    columns[4] == "" ? 0 : Convert.ToInt32(columns[4]),
+                   columns[5] == "" ? 0 : Convert.ToInt32(columns[5]),
                  columns[6],
                   columns[7],
                     columns[8]
