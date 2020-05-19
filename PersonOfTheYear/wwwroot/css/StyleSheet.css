@@ -3,15 +3,16 @@
 }
 
 body {
-    background-color: #2E8B57;
+    background-color: #ff0000;
     margin: 0 auto;
+   
 }
 
 
 /*------------------------------HEADER-----------------------------------*/
 header {
     
-    height: 30px;
+    height: 50px;
     width: 100%;
 }
 ul {
@@ -24,20 +25,30 @@ li {
     list-style-type: none;
     margin: 0 2vw;
     text-align: center;
-    font-size: 20px;
+    vertical-align: middle;
+    font-size: 10px;
 }
 a {
+ 
     text-align: center;
     text-decoration: none;
     color: black;
     padding: 2vw;
     font-family: monospace;
 }
+    a:hover {
+        width: auto;
+        background-color: #C6E9FF;
+        
+    }
 
 nav {
     width: 100vw;
+    height: 50px;
     background-color: #e5ffe5;
     text-align: center;
+    padding-left: 50px;
+    border-bottom: 1px groove black;
 }
 
 
@@ -46,6 +57,20 @@ nav {
 
 .Title {
     color: white;
-    border: 2px black groove;
     text-align: center;
+}
+
+/*---------------FORM STYLING--------------*/
+
+
+/*---------------FOOTER STYLING--------------*/
+footer {
+    height: 30px;
+    bottom: 0;
+    background: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding-left: 50px;
+   
 }
