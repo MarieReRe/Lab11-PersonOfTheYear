@@ -19,13 +19,12 @@ namespace PersonOfTheYear.Controllers
         [HttpPost]
         public IActionResult Index(int fromYear, int toYear)
         {
-            TimeSelected timeSelected = new TimeSelected(fromYear, toYear);
-            return RedirectToAction("Results", timeSelected);
+            return RedirectToAction("Results", new { fromYear, toYear });
         }
 
-        public IActionResult Results(TimeSelected timeSelected)
+        public IActionResult Results(int fromYear, int toYear)
         {
-            return View(TimePerson.GetPersons(timeSelected));
+            return View(TimePerson.GetPersons(fromYear, toYear));
         }
     }
 }
